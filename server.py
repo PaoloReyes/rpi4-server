@@ -33,8 +33,8 @@ while not internet_access:
 
 # Stock Portfolio Stuff
 @app.get('/stock-portfolio/register')
-def stock_portfolio_register_data(hey: float = 0.0, bbva: float = 0.0, nu: float = 0.0, fibras: float = 0.0, etfs: float = 0.0, cetes: float = 0.0, finsus: float = 0.0, mercado_pago: float = 0.0, bitso: float = 0.0, cash: float = 0.0):
-    return portfolio.register_data(hey, bbva, nu, fibras, etfs, cetes, finsus, mercado_pago, bitso, cash)
+def stock_portfolio_register_data(hey: float = 0.0, bbva: float = 0.0, uala = 0.0, nu: float = 0.0, fibras: float = 0.0, etfs: float = 0.0, cetes: float = 0.0, finsus: float = 0.0, mercado_pago: float = 0.0, bitso: float = 0.0, cash: float = 0.0):
+    return portfolio.register_data(hey, bbva, uala, nu, fibras, etfs, cetes, finsus, mercado_pago, bitso, cash)
 
 @app.get('/stock-portfolio/request')
 def stock_portfolio_request_data():
